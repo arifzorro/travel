@@ -1,0 +1,52 @@
+//error css ndak bisa diload...
+penyebab : htaccses
+solusi:
+rubah script htaccses..pake htaccsesnya tapon
+
+
+
+//error dropdown toogle...ndak bisa menu dropdown
+
+error untuk undifined index
+$query_age = (isset($_GET['query_age']) ? $_GET['query_age'] : null);
+
+//masih masalah error ni... 19 april 2015
+-error array[0] berisi index.php, berbeda dengan tutorial berisi null dan css tidak terdeteksi, 
+ apabila menggunakan view source lalu mengakses path dari css maka alamat path tersebut akan dimasukkan ke array
+    contoh : public/css/default.css
+    Array ( [0] => public [1] => css [2] => default.css )
+ dengan menggunakan htaccses yang ada di tutorial 
+- menggunakan htaccses zaf bisa tapi untuk array ke 1 tidak dapat diisi muncul error
+
+SOLUSI : ini disebakan htaccses yang tidak ada % nya seperti
+RewriteCond {REQUEST_FILENAME} !-d dirubah menjadi RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+//error 2 july 2015:
+bingung masalah dynamic class active, ahkhirnya terpikir langkah membaca posisi link dengan cara mengklik melalui fungsi click pada jquery,tetapi itu tidak bisa
+dikarenakan apabila pada suatu elemen kita taruh link atau class sebagai target untuk menyisipkan class aktif dan di dalam link tersebut sudah terisi href="<?php echo URL;?>dashboard/allpost,
+maka apabila di klik link tersebut dan saat di klik disisipkan class aktif maka tidak bisa ini dikarenakan waktu di klik page akan meload link alamat http://localhost/gbc/dashboard terlebih dahulu
+sehingga fungsi yang kita buat apabila link tersebut di klik lalu akan di sisipkan class aktif tidak akan berjalan;
+
+solusi;
+baca link dari address bar jangan pake fungsi kondisi jika di klik untuk elemen yang mempunyai link href kemana gitu; 
+
+
+TIPS :
+*menampilkan error pada browser :
+ -open php.ini lalu edit display error on dengan menghilangkan tanda semicolon dibawahnya
+
+
+error pada WAMP hilang url localhosst seperti seharusnya http://localhost/gbcv1 menjadi http//:gbc1
+solusi: pada index.php pada line 30 setting $suppress_localhost = false; 
+
+error "The character encoding of the HTML document was not declared."
+solusi : pakaiin meta  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+
+
+===========================BATAS=================================
+munculnya <pre class='xdebug-var-dump' dir='ltr'><small>boolean</small> <font color='#75507b'>true</font>
+</pre> di console firebug pada saat response adalah disebabkan oleh dibawah
+penyebab : var_dump($logged);
+        

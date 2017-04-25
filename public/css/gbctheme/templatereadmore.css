@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 27, 2015, 12:53:59 AM
+    Author     : arif
+*/
+
+.image-boxes.box {
+	margin-bottom:20px;
+}
+
+.image-boxes .hoverBorder {margin-bottom:15px;margin-right: 4px;}
+.hoverBorder {position:relative; display:inline-block;}
+.hoverBorderWrapper {position:relative; display:block;}
+.hoverBorderWrapper img {width:100%;}
+
+.image-boxes img {
+	width:100%;
+	height:auto;
+}
+
+.theHoverBorder {position:absolute; left:0; top:0; bottom:0; right:0; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;
+-webkit-box-shadow:0 0 0 3px rgba(255,255,255,0.15) inset; -moz-box-shadow:0 0 0 3px rgba(255,255,255,0.15) inset; box-shadow:0 0 0 3px rgba(255,255,255,0.15) inset; }
+.theHoverBorder:hover {-webkit-box-shadow:0 0 0 5px #FB641Dinset; -moz-box-shadow:0 0 0 5px #FB641D inset; box-shadow:0 0 0 5px #FB641D inset;}
+
+nav#main_menu li a,
+.topnav li.drop .pPanel,
+#totop,
+.info_pop .buyit,
+.playVideo span,
+.theHoverBorder,
+.hoverBorder h6,
+.slidingDetails .details,
+.slidingDetails,
+.partners_carousel li a,
+.hoverBorder:hover img,
+.feature_box.style3 .box,
+.services_box .icon,
+.css3accordion>ul>li .thumb,
+.gobox, .hover-box,
+.circlehover span,
+.process_box,
+#sidebar ul.menu li a,
+.timeline_box,
+.timeline_box:hover .date,
+.services_box.style2 .box,
+.team_member,
+.ptcarousel .controls > a,
+.shop-features .shop-feature {
+-webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; transition: all 0.2s ease-out; -moz-backface-visibility:    hidden;}
+
+.imgboxes_style1 .hoverBorder h6 {position:absolute; left:5px; bottom:11px; color:#fff; padding:6px 10px; background:#F17142; font-size:12px; font-weight:500; line-height:1; margin: 0;/*#cd2122*/
+-webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px; }
+.imgboxes_style1 .hoverBorder:hover h6 { left:15px;}
+
+.m_title {margin-top:0; color:#CD2122; text-shadow:0 1px 0 #fff; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);}
+.m_titlev2 {margin-top:0; color: #013A47;font-family: Open Sans; text-shadow:0 1px 0 #fff; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);}
+h3.m_title {font-size:20px; line-height: 1.4;}
