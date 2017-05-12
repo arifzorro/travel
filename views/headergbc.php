@@ -1,6 +1,6 @@
 <htmL>
 <head>
-    
+     <link rel='stylesheet' id='zn-templtecss-css'  href='<?php echo URL?>public/css/raise/template.css' type='text/css' media='all' />
      <link rel="stylesheet" type="text/css" href="<?php echo URL?>public/css/bootstrap3.3.4/css/bootstrap.min.css"/>
 <!--      <link rel="stylesheet" type="text/css" href="<?php echo URL?>public/css/bootstrapcsvalidator/bootstrapValidator.css"/>-->
     <link rel="stylesheet" type="text/css" href="<?php echo URL?>public/css/gbctheme/defaultsplash.css"/>
@@ -41,7 +41,7 @@
                     <div class="navto"><img class="listtoogle" src="<?php echo URL?>public/image/iconlist.png" width="50px" height="40px" alt="listtoogle"/></div>
                     <div class="row main-nav">
                         <div class="twocol">
-                            <a href="<?php echo URL?>/home" title="Go Home" class="logo"><img src="<?php echo URL;?>public/image/lomboktouragent.png" alt="danie"/></a>
+                            <a href="<?php echo URL?>/home" title="Go Home" class="logo"><img src="<?php echo URL;?>public/image/lomboktouragent_biglogo.png" alt="danie"/></a>
                             
                         </div>
                         <div class="tencol last navigation">

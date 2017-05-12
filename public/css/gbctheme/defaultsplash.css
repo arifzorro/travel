@@ -110,7 +110,7 @@ a.button-link:hover, button[type=submit]{ background: #171617; color: #F17142; t
 
 /*header*/
 header .intro { text-align: center; }
-header .intro h1 { font-size: 4em; color: #fff; margin: 14px 0 20px 0%; line-height: 1.1em; /* text-shadow: 0 1px 4px #000000;*/ }
+header .intro h1 { font-size: 2em; color: #fff; margin: 14px 0 20px 0%; line-height: 1.1em; /* text-shadow: 0 1px 4px #000000;*/ }
 header .intro p { font-size: 1.4em; color: #fff; /* text-shadow: 0 1px 2px #000000;*/  line-height: 1.4em; font-weight: 300; margin: 0 0 1em 0;}
 header .intro p em { font-weight: 700; }
 header .intro a { margin: 20px auto 3em 0; }
@@ -150,11 +150,11 @@ p.deck { font-size: 1.5em; font-weight: 400; line-height: 1.2em; color: #2f2f2f;
 .about .row:first-child { padding-bottom: 3em; margin-bottom: 2em; border-bottom: 1px solid #CCCBC9; border-bottom: 1px solid rgba(0,0,0,.2); }
 /*.about img { display: block; margin: 2em auto 0; }*/
 .about .animasi{margin-top: 2em;}
-.about .what-i-do img { width: auto; height: 165px; }
+.about .what-i-do img { width: 100%; height: 165px; }
 .about .what-i-do .animasi{position: relative;display: inline-block;}
-.about .what-i-love img { width: auto; height: 165px; }
+.about .what-i-love img { width: 100%; height: 165px; }
 .about .what-i-love .animasi{position: relative;display: inline-block;}
-.about .where-i-reside img { width: auto; height: 165px; }
+.about .where-i-reside img { width: 100%; height: 165px; }
 .about .where-i-reside .animasi{position: relative;display: inline-block;}
 .about .capabilities { list-style: none; padding: 0; margin: 5em 0 0 0; }
 .about .capabilities div { position: relative; background-color: #e6e4e4; padding: 4px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; /* box-shadow: 0 -1px 0 rgba(0,0,0,.2), 0 1px 0 #fff; */ margin-bottom: .75em; }
@@ -477,6 +477,6 @@ h2.subtitle{
 }
 .container .main-nav .twocol .logo img{
     position: relative;
-    top:20px;
-    left: 450px;
+    top: 15px;
+    left: 97px;
 }

@@ -4,11 +4,15 @@ $tempdata=$data->getdatapaketwithcategory();
 //var_dump($tempdata);
 
 ?>
+<!--css hirarki paling bawah di ketik dia paling menguasai-->
 
+<script src="<?php echo URL?>public/js/jquery-3.2.1.min.js"></script>
+<script src="<?php echo URL?>public/css/bootstrap3.3.4/js/bootstrap.js"></script>
+<script src="<?php echo URL?>public/js/jqueryui.js"></script>
 
-
-<link rel='stylesheet' id='zn-templtecss-css'  href='<?php echo URL?>public/css/raise/template.css' type='text/css' media='all' />
-<link rel='stylesheet' id='options-css'  href='<?php echo URL?>public/css/raise/option.css' type='text/css' media='all' />
+<link rel='stylesheet' href='<?php echo URL?>public/css/raise/option.css' type='text/css' media='all' />
+<link rel='stylesheet' href='<?php echo URL?>public/css/JQUERYUI.css' type='text/css' media='all' />
+<link rel='stylesheet' href='<?php echo URL?>public/css/font-awesome-4.7.0/css/font-awesome.css' type='text/css' media='all' />
 <!--<link rel='stylesheet' id='zn-bootstrap-responsivecss-css'  href='<?php echo URL?>public/css/raise/responsive.css' type='text/css' media='all' />-->
 <div class="row">
 <div class="itemListView clearfix eBlog">
@@ -42,15 +46,8 @@ $tempdata=$data->getdatapaketwithcategory();
                                             <div class="boat-content">
                                                 <h3 class="title">
                                                     <a href="<?php echo URL."paket/".$posturl?>" title="<?php echo $key['judul'] ?>">
-                                                       <?php echo $key['judul'] ?>                                                    </a>
-                                                    <span class="boat-meta pull-right">
-                                                                                                                    <i class="icon-star"></i>
-                                                                                                                    <i class="icon-star"></i>
-                                                                                                                    <i class="icon-star"></i>
-                                                                                                                    <i class="icon-star"></i>
-                                                                                                                    <i class="icon-star-empty"></i>
-                                                                                                                        (4/5)
-                                                    </span>
+                                                       <?php echo $key['judul'] ?> </a>
+                                                    <span class="boat-meta pull-right">(4/5)</span>
                                                 </h3>
                                                <?php  
                                                $isi_post_tanpa_url=$data->remove_image_url_V2($key['isipost']);
@@ -58,9 +55,9 @@ $tempdata=$data->getdatapaketwithcategory();
                                                echo $isi_post_tanpa_url_setelah_substring; 
                                                ?>
                                             </div>
-                                            <a class="btn btn-success" href="http://www.lombokreisen.com/gili-getaway-fast-boat?book">
+                                            <a class="btn btn-success" href="#" id="bookformbutton"> 
                                                 <i class="icon-shopping-cart icon-white"></i>&nbsp;Book
-                                            </a>
+                                            </a>                                          
                                             &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
                                             <span class="boat-price">Start from&nbsp;&nbsp;<i class="icon-tags"></i>&nbsp;<strong>USD 49</strong></span>
                                             <div class="clear"></div>
@@ -73,8 +70,27 @@ $tempdata=$data->getdatapaketwithcategory();
 
                             <!-- Pagination -->
                             <div class='pagination'><ul><li class="pagination-start"><span class="pagenav">Start</span></li><li class="pagination-prev"><span class="pagenav">Prev</span></li><li><span class="pagenav">1</span></li><li><a href="http://www.lombokreisen.com/category/boat/page/2">2</a></li><li class="pagination-next"><a href="http://www.lombokreisen.com/category/boat/page/2">Next</a></li><li class="pagination-end"><a href="http://www.lombokreisen.com/category/boat/page/2">End</a></li></ul><div class="clear"></div>Page 1 of 2</div>
-
                         </div>
     </div>
 </div>
-</div>    
+</div> 
+
+<script>
+$(document).ready(function(){
+    $("#bookformbutton").click(function(){
+        $("#bookform").modal();
+    });
+    $("")
+});
+
+$(document).ready(function($){
+    $( "#tour_date" ).datepicker({
+        minDate: 0,
+        showAnim: false,
+        dateFormat: "yy-mm-dd",
+        onClose: function( selectedDate ) {
+//            check_availability();
+        }
+    });
+});
+</script>
