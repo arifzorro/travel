@@ -1,9 +1,7 @@
 <?php 
 $getdata=new news();
 $data=$getdata->getpostcontain();
-
 ?>
-
 <htmL>
 <head>
 

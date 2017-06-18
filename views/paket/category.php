@@ -16,12 +16,18 @@ $tempdata=$data->getdatapaketwithcategory();
 <!--<link rel='stylesheet' id='zn-bootstrap-responsivecss-css'  href='<?php echo URL?>public/css/raise/responsive.css' type='text/css' media='all' />-->
 <div class="row">
 <div class="itemListView clearfix eBlog">
-                            <div class="itemList">        
+                            <div class="itemList"> 
+                                         <?php 
+                                         $totaldata= count($tempdata);
+                                         echo $totaldata;
+                                         $limitshowpost=5;
+                                         
+                                        ?>
                                         <?php foreach($tempdata as $key){ ?>
                                         <div class="clear"></div>
                                         <div class="itemContainer post-4805 boat-item">
-
                                             <div class="boat-image">
+                      
                                                 <?php  
                                                 $postname=new konvurl();
 //                                                $posturl=$postname->set_post_name("rumah makan");

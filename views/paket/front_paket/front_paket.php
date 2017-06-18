@@ -99,7 +99,7 @@ var dtLocal = {"passText":"To view this protected post, enter the password below
                                         <br/></div>
                                 </li>
                                 <li class="gw-go-even" data-row-index="1">
-                                    <div class="gw-go-body-cell heading-black">1-6 orang Rp 500.000/ 1 mobil<br/>1-12 orang Rp 1.000.000/ 2 mobil<br/></div>
+                                    <div class="gw-go-body-cell heading-black">chosose your fullday tour destination<br/></div>
                                 </li>
                                 <li data-row-index="2">
                                     <div class="gw-go-body-cell">
